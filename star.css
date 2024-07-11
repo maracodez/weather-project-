@@ -1,0 +1,55 @@
+body {
+  background-color: #000;
+  color: aliceblue;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+svg {
+  width: 80%;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.text {
+  font: 5em/1 "open sans", " Impact";
+  text-transform: uppercase;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  animation: stroke 6s infinite linear;
+  fill: none;
+
+  &:nth-child(5n+1) {
+    stroke: #9e38f2;
+    animation-delay: -1.2s;
+  }
+
+  &:nth-child(5n+2) {
+    stroke: #0e517a;
+    animation-delay: -2.4s;
+  }
+
+  &:nth-child(5n+3) {
+    stroke: #e9f1df;
+    animation-delay: -3.6s;
+  }
+
+  &:nth-child(5n+4) {
+    stroke: #56d9cd;
+    animation-delay: -4.8s;
+  }
+
+  &:nth-child(5n+5) {
+    stroke: #0505a4;
+    animation-delay: -6s;
+  }
+}
